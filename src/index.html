@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Home Work 12</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <form class="form">
       <label>
-        <input type="text" name="search-text" placeholder="Search images..." required>
+        <input
+          type="text"
+          name="search-text"
+          placeholder="Search images..."
+          required
+        />
       </label>
       <button type="submit">Search</button>
     </form>
-    <span class="loader">Loading images, please wait...</span>
+
     <ul class="gallery"></ul>
+
+    <div class="controls">
+      <button class="load-more hidden">Load more</button>
+
+      <span class="loader hidden">Loading images, please wait...</span>
+    </div>
+    <div class="end-message hidden"></div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
