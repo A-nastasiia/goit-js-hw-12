@@ -4,12 +4,12 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 const galleryContainer = document.querySelector(".gallery");
 let lightbox = null;
 const endMessageContainer = document.querySelector(".end-message");
-const loadMoreBtn = document.querySelector(".load-more"); 
+const loadMoreBtn = document.querySelector(".load-more");
 
 export function createGallery(images, isNewGallery) {
   const markup = images.map(
-      ({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => `
-      <a href="${largeImageURL}" class="gallery-item">
+    ({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => 
+      `<a href="${largeImageURL}" class="gallery-item">
         <img src="${webformatURL}" alt="${tags}" />
         <div class="info">
           <p>Likes ${likes}</p>
